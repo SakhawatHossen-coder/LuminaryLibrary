@@ -73,42 +73,59 @@ button,input{
 }
 .navbar {
   width: 100%;
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center; */
  display: flex;
   justify-content: space-between;
 
 
 }
-.nav_logo{
 
-  
-}
 .logo{
      margin-top: 1rem;
 }
 
+.logo:hover a{
+color:#5ea391d5;
+     
+}
+.nav_logo a{
+     color: black;
+     font-size: var(--mdFontLite);
+     margin-top: -.5rem;
+}
+.logo i{
+     margin-top: 1rem;
+}
 .logo span{
   padding-left: 1rem;
+
 }
 .nav_links ul {
 display: flex;
 align-items: center;
 }
 .nav_links li >a{
-     font-size: var(--baseFont);
+     font-size: 1.25rem;
      font-family: "Rubik", sans-serif;
-     padding-left: 2.5rem;
+     padding-left: 2rem;
      color: white;
+}
+.nav_links ul li a:hover{
+     color: black;
 }
 .nav_links li .btn {
      margin-left: 2rem;
-     /* background-color: #F5F6F8; */
      background-color: #22262e;
      padding: 1rem 3.5rem;
      border-radius: 1.90rem;
      margin-top: .6rem;
+     cursor: pointer;
+}
+.nav_links ul li button:hover {
+     background-color: white;
+}
+.nav_links ul li button:hover a{
+     color: #22262e;
+
 }
 .nav_image img{
      margin-left: 12rem;
@@ -120,7 +137,6 @@ font-size: var(--baseFont);
      /* <!-- Hero Section --> */
 .hero_image{
 background-image: url("images/heroBg2.png");
-/* max-width: 50rem; */
 background-size: cover;
 background-repeat: no-repeat;
 width: 50%;
@@ -255,9 +271,7 @@ margin-left: 5.5rem;
      #story{
           margin-top: 5rem;
      }
-     .new_story{
-
-     }
+   
 
      /* Fotter  */
      .footer{
